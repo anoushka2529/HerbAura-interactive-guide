@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* White background for a fresh look */
+    color: #333333; /* Black or dark gray text for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Grid Layout for Products */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #f9f9f9; /* Light gray background for product cards */
+    border-radius: 10px; /* Rounded corners for a soft, approachable look */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.product-card img {
+    border-radius: 50%; /* Circular background for plant images */
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333; /* Black text for product name */
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #666666; /* Gray text for product description */
+}
+
+.product-card .price {
+    font-size: 1.4rem;
+    color: #2f6b3c; /* Neutral green for price */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Icons */
+.lock-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #2f6b3c; /* Green for lock icon */
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* Accent Styles */
+.accent-green {
+    background-color: #a8d5ba; /* Soft green accent */
+}
+
+.accent-earthy {
+    background-color: #d4a373; /* Terracotta earthy accent */
+}
+
+.accent-blue {
+    background-color: #5fa3f3; /* Light blue accent for vibrancy */
+}
+
+/* Buttons and Links */
+button, a {
+    background-color: #2f6b3c; /* Green for buttons and links */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover, a:hover {
+    background-color: #4b8f5e; /* Slightly darker green on hover */
+}
+
+/* Footer Section */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    color: #666666; /* Gray text for footer */
+}

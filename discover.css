@@ -1,0 +1,204 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50; /* Darker shade for readability */
+    background-color: #ffffff; /* Clean, white background */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
+    color: #27ae60; /* Soft green to reflect nature theme */
+}
+
+.search-container {
+    position: relative;
+}
+
+#search-box {
+    padding: 10px;
+    border: 1px solid #27ae60; /* Green border */
+    border-radius: 8px;
+    font-size: 16px;
+    width: 250px;
+}
+
+#search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #f9f9f9; /* Neutral background for suggestions */
+    border: 1px solid #27ae60;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.suggestion {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background-color: #e6f3e6; /* Soft green hover effect */
+}
+
+#herb-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.herb-container {
+    background-color: #ffffff; /* White card background */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.herb-container:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.herb-header {
+    display: flex;
+    padding: 20px;
+    background: linear-gradient(to right, #f0fff0, #e6f3e6); /* Subtle gradient */
+}
+
+.herb-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #27ae60; /* Green border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.herb-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.herb-info strong {
+    font-size: 1.4em;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.herb-info em {
+    color: #7f8c8d;
+    font-style: italic;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.herb-info p {
+    margin: 0 0 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Ensure consistent two-line truncation */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 1em;
+    max-width: 800px;
+}
+
+.see-more {
+    color: #27ae60;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 0.9em;
+}
+
+.see-more:hover {
+    color: #2ecc71;
+}
+
+.extra-info {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+}
+
+.categories {
+    margin-top: 15px;
+}
+
+.category {
+    display: inline-block;
+    background-color: #e6f3e6; /* Light green for category tags */
+    color: #27ae60;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #27ae60;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: none;
+    text-align: center;
+    line-height: 40px;
+    padding: 0;
+}
+
+#back-to-top:hover {
+    background-color: #2ecc71;
+}
+
+@media (max-width: 768px) {
+    .herb-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .herb-image {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .herb-info p {
+        max-width: 100%;
+    }
+}

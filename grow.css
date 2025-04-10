@@ -1,0 +1,186 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff; /* White background for a fresh look */
+    color: #333333; /* Black or dark gray text for contrast */
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #4caf50; /* Green */
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Green Circle Buttons */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+/* Individual Button */
+button {
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 50%;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: 0.2s ease;
+    outline: none;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+button .arrow {
+    font-size: 1.6rem;
+    margin-top: 10px;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 1px solid #4caf50;
+    background-color: #fff;
+    margin-top: 15px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dropdown:focus {
+    background-color: #f0f8f0; /* Light green */
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+/* Categories Section */
+#categories {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Category Box Styling */
+.category {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+    font-size: 1.6rem;
+    color: #4caf50;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Guide Cards */
+.card {
+    background-color: #f9f9f9; /* Light gray background for product cards */
+    border-radius: 10px; /* Rounded corners for a soft, approachable look */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    color: #4caf50;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Link Styling */
+.link {
+    display: block;
+    text-align: center;
+    margin: 30px 0;
+    font-size: 1rem;
+    color: #4caf50;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    width: 150px;
+    transition: 0.3s ease;
+}
+
+.link:hover {
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+}
+
+/* Growing Guide Styling */
+.growing-guide {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.growing-guide h4 {
+    font-size: 1.4rem;
+    color: #4caf50;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.growing-guide p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+    line-height: 1.6;
+    padding-left: 15px;
+}
+
+/* Adding Animation to dropdown */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dropdown {
+    animation: fadeIn 1s ease;
+}
